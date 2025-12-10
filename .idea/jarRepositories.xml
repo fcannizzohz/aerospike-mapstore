@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshot-internal" />
+      <option name="name" value="Hazelcast Internal Snapshots" />
+      <option name="url" value="https://repository.hazelcast.com/snapshot-internal/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hazelcast-enterprise-snapshot" />
+      <option name="name" value="Hazelcast Private Snapshot Repository" />
+      <option name="url" value="https://repository.hazelcast.com/snapshot/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hazelcast-enterprise-release" />
+      <option name="name" value="Hazelcast Private Release Repository" />
+      <option name="url" value="https://repository.hazelcast.com/release/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hazelcast-release" />
+      <option name="name" value="hazelcast-release" />
+      <option name="url" value="https://repository.hazelcast.com/release/" />
+    </remote-repository>
+  </component>
+</project>
