@@ -25,7 +25,7 @@ Pain points
 - `loadAllKeys()` requires reading that record anyway.
 -Not good for “big” maps or very high write rates.
 
-So: keep this for small control/config maps. For anything else, I’d consider one of the following.
+So: keep this for small control/config maps. For anything else, I’d consider other options.
 
 Implementation: `com.hazelcast.fcannizzohz.mapstoredemo.AbstractAerospikeCdtMapStore` and `com.hazelcast.fcannizzohz.mapstoredemo.StringStringCdtMapStore`.
 
@@ -33,14 +33,14 @@ Implementation: `com.hazelcast.fcannizzohz.mapstoredemo.AbstractAerospikeCdtMapS
 
 This is usually the default choice.
 
-Shape
+Shape:
 - One Aerospike set per Hazelcast map (simplest mental model):
     - Hazelcast map payments → Aerospike set payments
 - Aerospike record key = Hazelcast map key
 - Value = multiple bins in the record:
     - amount, currency, status, updatedAt, etc.
 
-MapStore
+MapStore:
 - load(K) → client.get() on that key
 - store(K,V) → client.put() mapping V to bins
 - delete(K) → client.delete()
@@ -107,4 +107,9 @@ They Require external community server to connect to.
 ```bash
 docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server
 ```
+
+## Sequence
+
+[!Seq](./seq.drawio.png)
+
 
