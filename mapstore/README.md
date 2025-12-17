@@ -110,6 +110,6 @@ docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server
 
 ## Sequence
 
-[!Seq](./seq.drawio.png)
+![Seq](./seq.drawio.png)
 
 
